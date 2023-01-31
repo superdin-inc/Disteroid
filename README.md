@@ -43,6 +43,8 @@ module.exports = {
 
 > Only put code inside `execute` function, or all variables outside will not be accessible by the function
 
+> All variables on the module will be shared directly to the main script, in bidirectional
+
 ## Notes
 
 > There is no need to do `npm install`, The script will dynamically install that package whenever it need
