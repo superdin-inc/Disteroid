@@ -20,7 +20,8 @@ This one is inspired by Sapphire, decided to make my own single-file version of 
 ## Modules/Addons
 
 Modules is a small implementation i made, basically run that module on startup, it just open more possibilities.
-Different between modules and commands is commands loads using discord.js command loader, but modules are loaded globally
+Different between modules and commands is commands loads using discord.js command loader, but modules are loaded globally.
+Syntax are the same, but how you code it is different
 
 To start making a new module :
 
