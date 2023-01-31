@@ -28,7 +28,7 @@ To start making a new module :
 ```js
 module.exports = {
     data: {
-        name: 'DiscoVM',
+        name: 'Example addon',
     },
     execute: () => { //Better require() that dynamically install package!
         require('consola').success('Loaded Example addon');
