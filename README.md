@@ -30,8 +30,8 @@ Create folder named `modules` and create a new file `example.js`, put this snipp
 module.exports = {
     data: {
         name: 'Example addon',
-    },
-    execute: () => { //Better require() that dynamically install package!
+    }, //This "data" will provide addon name for the script, and will appear on the execute argument
+    execute: data => { //Better require() that dynamically install package!
         require('consola').success('Loaded Example addon');
         /* Add your code here!
         foo.addListener('bar',() => console.log)
