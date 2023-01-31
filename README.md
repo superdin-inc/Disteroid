@@ -5,8 +5,6 @@ Welcome to my another single-file client stuff
 
 This one is inspired by Sapphire, decided to make my own single-file version of it
 
-Name is from "Discord"+"asteroid" because i have nothing in my head
-
 ## How to use
 
 1. Create `config.json` and put this into your config :

@@ -1,0 +1,6 @@
+{
+  "scripts": {
+    "start":"npx nodemon -i node_modules -i package-lock.json",
+    "build":"npx google-closure-compiler src.js --module_resolution NODE --js_output_file index.js"
+  }
+}
