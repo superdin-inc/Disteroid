@@ -7,14 +7,15 @@ This one is inspired by Sapphire, decided to make my own single-file version of 
 
 ## How to use
 
-1. Create `config.json` and put this into your config :
+1. Download and unzip it somewhere
+2. Create `config.json` and put this into your config :
 ```json
 {
     "token": "TOKEN_HERE"
 }
 ```
-2. Create folder named `commands` and put commands into it, Syntax is the same as discord.js
-3. Run `npm start`, everything should start installing and work!
+3. Create folder named `commands` and put commands into it, Syntax is the same as discord.js
+4. Run `npm start`, everything should start installing and work!
 
 ## Modules/Addons
 
