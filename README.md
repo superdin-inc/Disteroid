@@ -39,6 +39,9 @@ module.exports = {
     }
 }
 ```
+> Do not use any declaration prefix, like `let`, `const` or `var`, this have a chance to break the system
+
+> Only put code inside `execute` function, or all variables outside will not be accessible by the function
 
 ## Notes
 
