@@ -23,9 +23,9 @@ Modules is a small implementation i made, basically run that module on startup, 
 Different between modules and commands is commands loads using discord.js command loader, but modules are loaded globally.
 Syntax are the same, but how you code it is different
 
-To start making a new module :
+To start making a new module,
 
-1. Create folder named `modules` and create a new file `example.js`, put this snippet in,
+Create folder named `modules` and create a new file `example.js`, put this snippet in,
 ```js
 module.exports = {
     data: {
