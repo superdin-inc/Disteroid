@@ -26,7 +26,6 @@ process.stdout.write('\u001bc');
 const consola = require('consola');
 consola.wrapConsole();
 const { Client, Collection, Events, GatewayIntentBits } = require('discord.js');
-const vm = require('vm');
 // Create a new client instance
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 
@@ -66,7 +65,7 @@ try {
 			//client.commands.set(command.data.name, command);
 			try {
 				setStatus('Loading');
-				vm.runInThisContext('('+command.execute.toString()+')(client)');
+				eval('('+command.execute.toString()+')(client)');
 				setStatus('Loaded');
 			} catch (e) {
 				e.message = 'Cannot load addon ' + command.data.name+' : '+e.message;
