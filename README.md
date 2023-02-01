@@ -1,8 +1,6 @@
 # Disteroid
 Too lightweight discord bot framework
 
-Welcome to my another single-file client stuff
-
 This one is inspired by Sapphire, decided to make my own single-file version of it
 
 ## How to use
@@ -11,11 +9,17 @@ This one is inspired by Sapphire, decided to make my own single-file version of 
 2. Create `config.json` and put this into your config :
 ```json
 {
-    "token": "TOKEN_HERE"
+    "token": "TOKEN HERE",
+    "clientId": "BOT CLIENT ID HERE"
 }
 ```
 3. Create folder named `commands` and put commands into it, Syntax is the same as discord.js
 4. Run `npm start`, everything should start installing and work!
+
+> There is 3 scripts
+> 1. `npm start` Normal start
+> 2. `npm run build` Build from src.js to index.js
+> 3. `npm run watch` Automatically build and restart when something changes
 
 ## Modules/Addons
 
@@ -25,7 +29,7 @@ Syntax are the same, but how you code it is different
 
 To start making a new module,
 
-Create folder named `modules` and create a new file `example.js`, put this snippet in,
+In folder named `modules`, create a new file `example.js`, put this snippet in,
 ```js
 module.exports = {
     data: {

@@ -1,6 +1,12 @@
 {
+  "name": "disteroid",
+  "type": "commonjs",
+  "author": {"name": "5UP3R_D1N inc.","email": "superdinmc@gmail.com","url": "https://github.com/superdin-inc/disteroid"},
+  "displayName": "Disteroid discord bot",
+  "main": "index.js",
   "scripts": {
-    "start":"npx nodemon -i node_modules -i package-lock.json",
-    "build":"npx google-closure-compiler src.js --module_resolution NODE --js_output_file index.js"
+    "start": "npx nodemon -i node_modules -i package-lock.json",
+    "build": "npx google-closure-compiler src.js --module_resolution NODE --js_output_file index.js --compilation_level WHITESPACE_ONLY",
+    "watch": "npx nodemon -i node_modules -i package-lock.json -i index.js --exec \"npx google-closure-compiler src.js --module_resolution NODE --js_output_file index.js --compilation_level WHITESPACE_ONLY&&node .\""
   }
 }
