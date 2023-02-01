@@ -46,7 +46,7 @@
 	process.stdout.write('\u001bc');
 	console.log(
 		art.textSync('Disteroid', {
-			font: 'speed',
+			font: 'Speed',
 			horizontalLayout: 'default',
 			verticalLayout: 'default',
 			width: 150,
